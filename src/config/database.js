@@ -1,3 +1,5 @@
+const { underscoredIf } = require("sequelize/lib/utils");
+
 module.exports = {
     dialect: 'postgres',
     host: 'localhost',
@@ -6,5 +8,7 @@ module.exports = {
     database: 'devburger',
     define: {
         timestamps: true,
+        underscored: true,
+        underscoredAll: true
     }
 }
